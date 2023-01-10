@@ -22,7 +22,7 @@ T det(std::vector< std::vector< T > >& m,
 template<typename T>
 T determinant(std::vector< std::vector< T > > m) {
   std::set<int> xs;
-  for (int x = 0; x < m.size(); x++) { xs.emplace(x); }
+  for (size_t x = 0; x < m.size(); x++) { xs.emplace(x); }
   return det(m, xs);
 }
 
