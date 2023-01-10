@@ -39,7 +39,7 @@ int main(int argc, char* argv[])
     // let's always start prime numbers with 2 and 3
     printf("2\n3\n");
 
-    // we simple take 6k-1 and 6k+1 values for k > 0, up to the given ceiling
+    // we simply take 6k-1 and 6k+1 values for k > 0, up to the given ceiling
     // not all of them are prime, but all prime numbers can be expressed like that
     for (unsigned int i = 6; i < print_to; i += 6) {
         if (isPrime(i-1)) { printf("%u\n", i - 1); }
