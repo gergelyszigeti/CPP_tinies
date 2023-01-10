@@ -1,6 +1,7 @@
 #include <string>
 #include <set>
 #include <iostream>
+#include <functional>
 
 int main(int argc, char *argv[])
 {
