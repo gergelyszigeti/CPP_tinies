@@ -5,6 +5,8 @@ int main()
     // This is a demonstration that even smart pointers must be
     // used and initialized properly. Otherwise, segfault can occur.
 
+    // Note: gcc even gives you a warning on this
+
     int obj = 666;
     auto badptr = std::unique_ptr<int>(&obj); // ouch!
 
@@ -32,3 +34,5 @@ int main()
 // From C++14, it is much clearer and simpler:
 // auto goodptr = std::make_unique<int>(666);  // C++14 and above
 // Bonus with make_unique<int>: initializon with raw pointer won't compile
+//
+// Also a good lesson to learn: ALWAYS take warnings seriously
