@@ -4,9 +4,9 @@
 
 class RomanHelper{
   public:
-    std::string to_roman(unsigned int n){
+    std::string to_roman(int n){
       // helper function - note, it is not speed optimal, pos LUT needed
-      auto symbol = [](unsigned int n, const int m) {
+      auto symbol = [](int n, const int m) {
         const char* common_patterns = "2a3aa4aaa3ab2b3ba4baa5baaa3ac2c";
         const char* symbols = "IVXLCDM";
         std::string ret_symbol;
