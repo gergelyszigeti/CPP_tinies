@@ -1,6 +1,7 @@
 .PHONY: clean all
 
 TINIES = determinant factorials permutation permutation_wo_repeat primes
+TINIES += romannumerals
 TINIES += segfault_with_std_unique_ptr # sometimes it runs without trouble
 all: $(TINIES)
 
