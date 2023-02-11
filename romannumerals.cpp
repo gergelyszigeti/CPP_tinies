@@ -18,7 +18,7 @@ class RomanHelper{
         }
         return ret_symbol;
       };
-      
+
       // parser, each line for one digit
       std::string roman;
       while (n > 999) { roman += "M"; n -= 1000;}
@@ -40,7 +40,7 @@ class RomanHelper{
         int value = 1; while (   symbols[s++] != c) { value *= s%2? 5 : 2; }
         return count * value;
       };
-      
+
       // parser loop
       int arabic = 0, last_value = 5000;
       while (int value = get_same_chars()) {
